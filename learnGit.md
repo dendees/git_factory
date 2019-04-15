@@ -39,4 +39,6 @@
 
 1. 新建分支并且切换分支 : git checkout -b <branchName> 等价于 git branch <branchName>, git checkout <branchName>
 2. 查看所有分支 git branch
+3. 增加一条master
+4. 
 
