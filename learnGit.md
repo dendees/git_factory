@@ -43,3 +43,15 @@
 4. 合并分支 : git merge <branchName>
 5. 删除分支 : git branch -d <brandName>
 
+### BUG分支 - Stash暂存当前工作修改其他BUG
+
+1. git stash : 保存当前工作
+2. git checkout master : 切回主干
+3. git checkout -b <branchName> : 用主干内容新建分支
+4. 分支修改完成，合并删掉
+5. 切回 stash 对应的分支
+6. git stash list： 显示stash
+7. git stash apply： 恢复stash, git stash apply stash@{0} : 恢复到制定的stash， git stash drop： 删除 stash
+8. git stash pop 恢复和删除
+
+### 新功能分支 - Feature
