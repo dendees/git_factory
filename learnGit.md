@@ -38,7 +38,8 @@
 每次新建分支，相当于git新建个指针指向分支。之后所有提交修改都指向分支。分支修改完毕，再把指针指向master，分支合并完成。删除分支即是删除指针。
 
 1. 新建分支并且切换分支 : git checkout -b <branchName> 等价于 git branch <branchName>, git checkout <branchName>
-2. 查看所有分支 git branch
-3. 增加一条master
-4. 
+2. 查看所有分支 : git branch, 星号为当前使用的分支
+3. 切回主干 <master> : git checkout master
+4. 合并分支 : git merge <branchName>
+5. 删除分支 : git branch -d <brandName>
 
