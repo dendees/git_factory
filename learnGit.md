@@ -16,3 +16,27 @@
 7. git rm docname 删除暂存区的文件
 8. git remote add origin git@ <github的git文件地址>： 本地代码和github库建立关系
 9. git push -u origin master : 推送本地库的内容至github
+10. git clone <github的git文件地址> : 从远程库获取
+
+## 常用操作
+
+### 关联远程git库
+
+1. 使用命令git remote add origin git@server-name:path/repo-name.git；
+2. 关联后，使用命令git push -u origin master第一次推送master分支的所有内容；
+3. 此后，每次本地提交后，只要有必要，就可以使用命令git push origin master推送最新修改；
+
+### 提交修改
+
+1. git add
+2. git commit
+3. git push
+
+### 新建和合并分支
+
+每次提交，相当于在git上创建一个点。git把这些点串成一条线，master是主线。
+每次新建分支，相当于git新建个指针指向分支。之后所有提交修改都指向分支。分支修改完毕，再把指针指向master，分支合并完成。删除分支即是删除指针。
+
+1. 新建分支并且切换分支 : git checkout -b <branchName> 等价于 git branch <branchName>, git checkout <branchName>
+2. 查看所有分支 git branch
+
